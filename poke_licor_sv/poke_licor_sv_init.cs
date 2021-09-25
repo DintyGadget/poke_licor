@@ -23,7 +23,7 @@ namespace poke_licor_sv
                 {
                     Player source = getSource(data.source);
                     TriggerEvent("vorpCore:subItem", data.source, LoadConfig.Config["ItemsToUse"][index]["Name"].ToString(), 1);
-                    source.TriggerEvent("poke_licor:useItem", LoadConfig.Config["ItemsToUse"][index]["Label"].ToString(), LoadConfig.Config["ItemsToUse"][index]["CoreType"].ToObject<int>(), LoadConfig.Config["ItemsToUse"][index]["ObjectModel"].ToString(), LoadConfig.Config["ItemsToUse"][index]["propId"].ToString(), LoadConfig.Config["ItemsToUse"][index]["itemInteraction"].ToString(), LoadConfig.Config["ItemsToUse"][index]["AnimFxType"].ToString());
+                    source.TriggerEvent("poke_licor:useItem", LoadConfig.Config["ItemsToUse"][index]["Label"].ToString(), LoadConfig.Config["ItemsToUse"][index]["CoreType"].ToObject<int>(), LoadConfig.Config["ItemsToUse"][index]["ObjectModel"].ToString(), LoadConfig.Config["ItemsToUse"][index]["propId"].ToString(), LoadConfig.Config["ItemsToUse"][index]["itemInteraction"].ToString(), LoadConfig.Config["ItemsToUse"][index]["AnimFxType"].ToString(), LoadConfig.Config["ItemsToUse"][index]["DrunkTime"].ToObject<int>(), LoadConfig.Config["ItemsToUse"][index]["Damage"].ToObject<int>());
                 }));
             }
         }
