@@ -41,6 +41,7 @@ namespace poke_licor_cl
                         drunk = true;
                         effect = animFxType;
                         Function.Call((Hash)0x4102732DF6B4005F, animFxType, 0, true);
+                        Function.Call((Hash)0xA9A41C1E940FB0E8, API.PlayerPedId(), true);
                         if (coretype != -1)
                         {
                             Function.Call((Hash)0xC6258F41D86676E0, API.PlayerPedId(), coretype, 100);
@@ -49,7 +50,6 @@ namespace poke_licor_cl
                         }
                         if (damage != -1)
                         {
-                            Function.Call((Hash)0xA9A41C1E940FB0E8, API.PlayerPedId(), true);
                             Function.Call((Hash)0x697157CED63F18D4, API.PlayerPedId(), damage, false);
                         }
                         Function.Call((Hash)0x406CCF555B04FAD3, API.PlayerPedId(), 1, 1.0f);
